@@ -56,6 +56,35 @@ public class FrmEstadistica extends JFrame {
         JTextField txtEstadistica = new JTextField();
         txtEstadistica.setBounds(210, 200, 100, 25);
         getContentPane().add(txtEstadistica);
+        btnAgregar.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                agregardato();
+            }
+        });
+        btnAgregar.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                quitardato();
+            }
+        });
+        btnEstadistica.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MostrarEstadistica();
+            }
+        });
+    }
+    private void agregardato(){
+        JOptinPane.showMessageDialog(null,"HIzo click en Agregar")
+    }
+    private void quitardato(){
+        JOptinPane.showMessageDialog(null,"HIzo click en Quitar")
+
+    }
+    private void MostrarEstadistica(){
+        JOptinPane.showMessageDialog(null,"HIzo click en Estadistica")
+
     }
 
 }
